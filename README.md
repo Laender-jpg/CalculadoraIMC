@@ -27,7 +27,7 @@ Calculadora de IMC foi um aplicativo que desenvolvi para dar meus primeiros pass
 - Melhorar estilização do app
 
 ## Author
-Amanda Laender (follow me on [LinkedIn](https://www.linkedin.com/in/amandalaender/)
+Amanda Laender (follow me on [LinkedIn](https://www.linkedin.com/in/amandalaender/))
 
 ## License
 ```
