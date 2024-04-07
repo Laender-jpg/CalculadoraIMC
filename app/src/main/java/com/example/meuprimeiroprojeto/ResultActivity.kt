@@ -29,20 +29,18 @@ class ResultActivity : AppCompatActivity() {
         Igual ou maior que 40	Obesidade grau III
          */
 
-        var classificacao = ""
-
-        if (result < 18.5f) {
-            classificacao = "ABAIXO DO PESO"
+        val classificacao = if(result < 18.5f){
+            "ABAIXO DO PESO"
         } else if (result in 18.5f..24.9f) {
-            classificacao = "NORMAL"
+            "NORMAL"
         } else if (result in 25f..29.9f) {
-            classificacao = "SOBREPESO"
+            "SOBREPESO"
         } else if (result in 30f..34.9f) {
-            classificacao = "OBESIDADE II"
+            "OBESIDADE GRAU I"
         } else if (result in 35f..39.9f) {
-            classificacao = "OBESIDADE GRAU II"
-        } else if (result > 40f) {
-            classificacao = "OBESIDADE III"
+            "OBESIDADE GRAU II"
+        } else {
+            "OBESIDADE GRAU III"
         }
 
         tvClassificacao.text = getString(R.string.message_classificacao, classificacao)
